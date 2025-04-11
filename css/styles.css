@@ -7,3 +7,8 @@
 .kirmizi {
     border: 10px solid red;
 }
+
+#icerik {
+    border: 1px solid #eee;
+    margin-top: 10px;
+}

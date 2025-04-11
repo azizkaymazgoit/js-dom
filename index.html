@@ -5,14 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 300px;
+          height: 300px;
+          background-color: #3f51b5;
+          transition: background-color 200ms ease-in;
+        }
+  
+        .box--active {
+          background-color: #009688;
+        }
+  
+        .inner-box {
+          width: 100px;
+          height: 100px;
+          background-color: #ffc107;
+        }
+        img {
+            width: 100px;
+        }
+      </style>
 </head>
 <body>
 
-    <button id="menuEkle">Menü Ekle</button>
+    
+    <form action="submit" class="js-form car-search">
+        
+        <div class="car-group">
+          <input type="text" name="query" class="car-input" placeholder="Arama" />
+        </div>
+        
+        <div class="car-group">
+          <select name="options" class="car-select">
+            <option value="car">Marka</option>
+            <option value="type">Model</option>
+          </select>
+        </div>
+        
+        <button class="car-button">Arama</button>
+      </form>
+      
+      <ul class="js-list car-list"></ul>
+    
+    
+    
+    
+    
+    <!-- <div class="box js-box">
+        <div class="inner-box"></div>
+    </div> -->
 
-    <ul class="menu"></ul>
 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia eaque fugit ex molestiae vero harum iure consequatur incidunt molestias alias. <span>Excepturi</span> laborum nam quas, provident in at soluta expedita eveniet?</p>
+
+
+    <!-- <form class="js-form feedback-form">
+        <input
+          type="text"
+          name="email"
+          class="form-input"
+          placeholder="Email"
+          required
+   />
+        <input
+          type="password"
+          name="password"
+          class="form-input"
+          placeholder="Password"
+          required
+   />
+        <textarea
+          cols="30"
+          rows="10"
+          name="comment"
+          class="form-textarea"
+          placeholder="Comment"
+        ></textarea>
+        
+        <button type="submit" class="form-button">Gönder</button>
+      </form> -->
+
+
+
+
+    <!-- <button id="btnTikla">Tıkla</button> -->
+
+    <!-- <input type="text" id="myInput">
+
+    <div id="icerik"></div> -->
 
 
     <!-- <img src="" id="resmim" class="deneme">
