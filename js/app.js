@@ -81,7 +81,7 @@ container.addEventListener("click", handleColor) */
     ekran.show();
 }) */
 
-const products = [
+/*const products = [
   {
     id: 1,
     img: "https://www.vodafone.ua/shop/media/wysiwyg/novosti/Capture_1_large.JPG",
@@ -151,4 +151,123 @@ function handlerProductClick(evt) {
     </div>
 `);
     instance.show();
+}*/
+
+
+// objelerde - dizilerde
+
+/* const ad = kisi.ad;
+const soyad = kisi.soyad; */
+
+// const {ad, soyad, yas = "deafult değer", meslek : job} = kisi;
+
+/*console.log("ad1: ", ad);
+console.log("soyad2: ", soyad);
+console.log("yas: ", yas);
+console.log("meslek: ", job);*/
+
+/* const kisiler = [
+    {
+        ad: "Aziz",
+        soyad: "Kaymaz",
+        yas: 30,
+        meslek: "Yazılım"
+    },
+    {
+        ad: "Mehmet",
+        soyad: "Kaymaz",
+        yas: 25,
+        meslek: "Tasarım"
+    }
+]
+
+kisiler.forEach(({ad, soyad, yas}) => {
+    
+    console.log(`Merhaba ${ad} ${soyad} Hoşgeldin`)
+
+}) */
+
+/* const kisi = {
+    ad: "Aziz",
+    soyad: "Kaymaz",
+    yas: 30,
+    meslek: "Yazılım"
 }
+
+function kisiYaz({ad, soyad}) {
+    console.log(`Merhaba ${ad} ${soyad} Hoşgeldin 2`);
+}
+
+function kisiYaz({ad = "asdas", soyad} = {ad : "boş değer2"}) {
+    console.log(`Merhaba ${ad} ${soyad} Hoşgeldin 2`);
+}
+
+kisiYaz(); */
+
+/* const kisi = {
+    ad: "Aziz",
+    soyad: "Kaymaz",
+    yas: 30,
+    meslek: "Yazılım",
+    diller: {
+        frontend: "react",
+        backend: "nodejs"
+    }
+}
+
+const {ad, diller: {frontend, backend}, yas, ...rest} = kisi;
+
+console.log("ad: ", ad)
+console.log("frontend: ", frontend)
+console.log("backend: ", backend)
+console.log("yas: ", yas)
+console.log("geri kalanlar: ", rest) */
+
+/* const gunler = ["pazartesi", "salı", "çarşamba", "perşembe", "cuma"];
+
+// const pazartesi = gunler[0]
+
+const [,,crs, ...kalanlar] = gunler;
+
+// console.log(pts)
+// console.log(sl)
+console.log(crs)
+console.log(kalanlar) */
+
+/* const user = {
+  id: 1,
+  username: "harry_potter",
+  profile: {
+    name: "Harry",
+    surname: "Potter",
+    age: 25,
+  },
+};
+
+const {profile: {name, surname}, username} = user;
+
+
+console.log(`Kullanıcı adı: ${ name }`);
+console.log(`Soyadı: ${ surname }`);
+console.log(`Kullanıcı adı (rumuz olarak): ${ username }`); */
+
+/* const product = {
+    name: 'Smart TV',
+    price: 25000,
+    category: 'Electronics',
+    details: {
+      brand: 'Samsung',
+      color: 'Black',
+      weight: '15.5'
+    }
+  };
+
+  const {name, price, category, details: {brand, color, weight}} = product;
+
+  console.log(`Назва товару: ${ name }`);
+  console.log(`Ціна: ${ price } грн`);
+  console.log(`Категорія: ${ category }`);
+  console.log('Деталі:');
+  console.log(`- Бренд: ${ brand }`);
+  console.log(`- Колір: ${ color }`);
+  console.log(`- Вага: ${ weight } кг`); */
