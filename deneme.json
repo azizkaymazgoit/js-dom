@@ -1,0 +1,12 @@
+{
+    "isim": "Aziz",
+    "soyisim": "Kaymaz",
+    "meslek": "Yazılım",
+    "yas": 80,
+    "diller": ["html", "css"],
+    "deneme2": null,
+    "adres": {
+        "il": "istanbul",
+        "ilce": "maltepe"
+    }
+}

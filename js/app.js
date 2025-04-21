@@ -271,3 +271,111 @@ console.log(`Kullanıcı adı (rumuz olarak): ${ username }`); */
   console.log(`- Бренд: ${ brand }`);
   console.log(`- Колір: ${ color }`);
   console.log(`- Вага: ${ weight } кг`); */
+
+
+// JSON
+
+
+
+/* const kisi = {
+    name: "aziz",
+    soyad: "kaymaz",
+    meslek: "Yazılım",
+    yas: 30,
+    deneme: function() {
+        console.log("sdasdas")
+    }
+}
+
+const jsonData = JSON.stringify(kisi)
+console.log(jsonData)*/
+
+
+/* const gelenData = `
+{
+    "isim": "aziz",
+    "soyad": "kaymaz",
+    "yas": 30
+}
+`;
+
+const parseData = JSON.parse(gelenData)
+console.log(parseData) */
+
+
+/* const gelenData = `
+{
+    "isim": "aziz",
+    "soyad": "kaymaz",
+    "yas": 30,
+}
+`
+
+try {
+    console.log("try çalıştı")
+    const parseData = JSON.parse(gelenData)
+    console.log(parseData)
+}catch (err) {
+    console.log("resimler yüklenemd")
+    console.log(err)
+}
+
+console.log("kod devam ediyor") */
+
+/* localStorage.setItem("tema", "light")
+localStorage.setItem("user", "azizkaymaz")
+// localStorage.removeItem("tema")
+
+console.log("getitem::::",localStorage.getItem("tema"))
+
+if(localStorage.getItem("tema")) {
+    console.log("var")
+}else {
+    console.log("yok")
+}
+
+localStorage.clear() */
+
+
+/* const kullaniciAyarlari = {
+    dil: "tr",
+    bildirim: false,
+    tema: "dark",
+}
+
+const stringiData = JSON.stringify(kullaniciAyarlari)
+// localStorage.setItem("ayarlar", stringiData)
+
+// localStorage.setItem("ayarlar", kullaniciAyarlari)
+
+// console.log(localStorage.getItem("ayarlar"))
+
+
+const parseData = localStorage.getItem("ayarlar")
+console.log(parseData)
+
+console.log(JSON.parse(parseData)) */
+
+
+if (localStorage.getItem('theme')) {
+    const currentTheme = localStorage.getItem('theme');
+    document.body.classList.add(currentTheme);
+} else {
+    document.body.classList.add('light-mode');
+}
+
+const btnEl = document.getElementById('themeToggle')
+
+btnEl.addEventListener('click', () => {
+    const currentTheme = localStorage.getItem('theme')
+
+    if (currentTheme === 'light-mode') {
+        document.body.classList.remove('light-mode');
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark-mode'); 
+    } else {
+        document.body.classList.remove('dark-mode');
+        document.body.classList.add('light-mode');
+        localStorage.setItem('theme', 'light-mode'); 
+    }
+});
